@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-link {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.create-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; 
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type='text'] {
+  flex: 1; 
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 7px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  min-width: 400px;
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #80669d;
+  border: none;
+  cursor: pointer; 
+}
+
+button:hover {
+  background-color: #33b249;
+  border-radius: 50%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100%; 
+}
+
+.task .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.task .icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #ED0800; 
+  margin-left: 10px; 
+}
+
+.task p {
+  margin-left: 10px; 
+}
+
+.through {
+  text-decoration: line-through;
+}
+
+.normal {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .create-form {
+    flex-direction: column; 
+    align-items: stretch;
+  }
+
+  button {
+    margin-top: 10px;
+    background-color: #6200ea; 
+    height: 30px;
+    min-width: 350px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .task {
+    align-items: stretch;
+  }
+}
